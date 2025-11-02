@@ -1,0 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Optional: set default light theme */
+/* body { @apply bg-white text-gray-900; } */
+@import "tailwindcss";
