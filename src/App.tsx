@@ -15,7 +15,7 @@ const PROFILE = {
   github: "https://github.com/",
   linkedin: "https://www.linkedin.com/",
   resumeUrl: "#", // replace with your resume link
-  imageUrl: "./public/PT.jpeg", // Add your photo here
+  imageUrl: "/PT.jpeg", // Add your photo here
 };
 
 const TIMELINE = [
