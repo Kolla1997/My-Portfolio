@@ -216,17 +216,18 @@ export default function AboutPortfolio() {
               <TypeAnimation
                 sequence={[
                   PROFILE.name,
-                  3000,
+                  30000,
                   'A Backend Developer',
                   1000,
                   'A Problem Solver',
                   1000,
                   PROFILE.name,
-                  5000,
+                  5000000,
                 ]}
                 wrapper="span"
                 speed={10}
-                repeat={Infinity}
+                // repeat={Infinity}
+                cursor={false}
                 className="inline-block"
               />
             </h1>
@@ -238,6 +239,7 @@ export default function AboutPortfolio() {
               ]}
               wrapper="span"
               speed={50}
+              cursor={false}
               className="inline-block"
               />
             </p>
