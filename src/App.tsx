@@ -276,6 +276,10 @@ export default function AboutPortfolio() {
             </div>
               <div className="flex flex-wrap gap-2">
                 <Badge>{PROFILE.location}</Badge>
+                <Badge>Backend Engineer</Badge>
+                <Badge>Go Developer</Badge>
+                <Badge>AI-Driven Systems</Badge>
+                <Badge>Cloud & DevOps</Badge>
                 <Badge>Open Source</Badge>
                 <Badge>Clean Architecture</Badge>
               </div>
