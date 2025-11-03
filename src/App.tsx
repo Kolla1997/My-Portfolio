@@ -216,13 +216,13 @@ export default function AboutPortfolio() {
               <TypeAnimation
                 sequence={[
                   PROFILE.name,
-                  30000,
-                  'A Backend Developer',
-                  1000,
-                  'A Problem Solver',
-                  1000,
-                  PROFILE.name,
-                  5000000,
+                  // 30000,
+                  // 'A Backend Developer',
+                  // 1000,
+                  // 'A Problem Solver',
+                  // 1000,
+                  // PROFILE.name,
+                  // 5000000,
                 ]}
                 wrapper="span"
                 speed={10}
@@ -231,7 +231,7 @@ export default function AboutPortfolio() {
                 className="inline-block"
               />
             </h1>
-            <p className="mt-2 font-dpsd text-base text-gray-700">
+            <p className="mt-2 font-dpsd-bold text-base text-gray-700">
               <TypeAnimation
               sequence={[
                 500,
