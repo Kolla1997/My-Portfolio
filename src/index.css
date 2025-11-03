@@ -5,3 +5,61 @@
 /* Optional: set default light theme */
 /* body { @apply bg-white text-gray-900; } */
 @import "tailwindcss";
+.font-gilbertish { font-family: 'Red Hat Mono', 'IBM Plex Mono', monospace; }
+
+@font-face {
+  font-family: 'DPSDbeyond';
+  src: url('/src/assets/fonts/DPSDbeyond.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-dpsd {
+  font-family: 'DPSDbeyond', sans-serif;
+}
+.font-dpsd-bold {
+  font-family: 'DPSDbeyond', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Taler';
+    src: url('/src/assets/fonts/TALERO\ v1.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+.font-talero {
+  font-family: 'Taler', sans-serif;
+}
+.font-talero-bold {
+  font-family: 'Taler', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Kirana';
+    src: url('/src/assets/fonts/KIRANA.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+.font-kirana {
+  font-family: 'Kirana', sans-serif;
+}
+.font-kirana-bold {
+  font-family: 'Kirana', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Jvmiy';
+    src: url('/src/assets/fonts/JVMIYOPRO\ Bold.ttf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+.font-jvmiy {
+  font-family: 'Jvmiy', sans-serif;
+}
+.font-jvmiy-bold {
+  font-family: 'Jvmiy', sans-serif;
+  font-weight: bold;
+}

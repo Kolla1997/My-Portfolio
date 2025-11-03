@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
 import React from "react";
+import { TypeAnimation } from 'react-type-animation';
 
 
 // ---- Simple data you can edit quickly ----
@@ -155,13 +156,13 @@ export default function AboutPortfolio() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Nav */}
       <header className="sticky top-0 z-40 bg-white/70 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-3 py-4">
           <nav className="flex gap-6">
-            <a className="text-sm font-medium hover:opacity-70" href="#about">About</a>
-            <a className="text-sm font-medium hover:opacity-70" href="#timeline">Journey</a>
-            <a className="text-sm font-medium hover:opacity-70" href="#skills">Skills</a>
-            <a className="text-sm font-medium hover:opacity-70" href="#projects">Projects</a>
-            <a className="text-sm font-medium hover:opacity-70" href="#contact">Contact</a>
+            <a className="text-sm font-kirana font-medium hover:opacity-70" href="#about">About</a>
+            <a className="text-sm font-kirana font-medium hover:opacity-70" href="#timeline">Journey</a>
+            <a className="text-sm font-kirana font-medium hover:opacity-70" href="#skills">Skills</a>
+            <a className="text-sm font-kirana font-medium hover:opacity-70" href="#projects">Projects</a>
+            <a className="text-sm font-kirana font-medium hover:opacity-70" href="#contact">Contact</a>
           </nav>
           <div className="hidden md:flex items-center gap-2">
             <span className="text-sm text-gray-600">Available for opportunities:</span>
@@ -211,17 +212,50 @@ export default function AboutPortfolio() {
       <section id="hero" className="mx-auto max-w-6xl px-4 py-16">
         <motion.div {...fadeUp} className="grid items-center gap-10 md:grid-cols-2">
           <div>
-            <h1 className="text-3xl font-extrabold leading-tight sm:text-5xl">
-              {PROFILE.name}
+            <h1 className="text-3xl font-kirana-bold tracking-tight leading-tight sm:text-4xl">
+              <TypeAnimation
+                sequence={[
+                  PROFILE.name,
+                  3000,
+                  'A Backend Developer',
+                  1000,
+                  'A Problem Solver',
+                  1000,
+                  PROFILE.name,
+                  5000,
+                ]}
+                wrapper="span"
+                speed={10}
+                repeat={Infinity}
+                className="inline-block"
+              />
             </h1>
-            <p className="mt-2 text-lg text-gray-700">{PROFILE.role}</p>
-            <div className="mt-4 max-w-prose text-gray-600 space-y-4 dpsd dpsd-tight">
-              {PROFILE.summary.split(/\n\s*\n/).map((para, idx) => (
-                <p key={idx} className="leading-relaxed">
-                  {para}
-                </p>
-              ))}
-            </div>
+            <p className="mt-2 font-dpsd text-base text-gray-700">
+              <TypeAnimation
+              sequence={[
+                500,
+                PROFILE.role,
+              ]}
+              wrapper="span"
+              speed={50}
+              className="inline-block"
+              />
+            </p>
+            {/* <TypeAnimation
+              sequence={[
+                500,
+                PROFILE.summary.replace(/\n\s*\n/g, " "),
+              ]}
+              wrapper="div"
+              speed={25}
+              className="font-dpsd text-gray-600 leading-relaxed max-w-prose"
+            /> */}
+
+          <div className="mt-4 max-w-prose font-dpsd text-gray-600 space-y-4">
+            {PROFILE.summary.split(/\n\s*\n/).map((para, idx) => (
+              <p key={idx}>{para}</p>
+            ))}
+          </div>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
                 className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm font-medium hover:bg-gray-50"
